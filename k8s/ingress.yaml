@@ -16,3 +16,13 @@ spec:
             name: banking-app-service
             port:
               number: 80
+  - host: bankingapp.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: banking-app-service
+            port:
+              number: 80
